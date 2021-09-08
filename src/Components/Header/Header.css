@@ -1,0 +1,17 @@
+.banner-container {
+    width: 100vw;
+    height: 90vh;
+    margin: 0 auto;
+    background-color: #274B63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    font-size: 7rem;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+
