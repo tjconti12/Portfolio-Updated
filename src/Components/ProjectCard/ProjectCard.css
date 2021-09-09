@@ -1,0 +1,31 @@
+.card-container {
+    width: 250px;
+    height: 280px;
+    margin: 20px auto;
+}
+
+.card-image-container {
+    width: 240px;
+    height: 220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    /* 
+    Figured out how to center the oversized photo from stackoverflow. Included is the link
+    https://stackoverflow.com/questions/14562457/center-oversized-image-in-div/41059954 
+    */
+}
+
+.card-title {
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+    text-align: center;
+    margin-top: 0.5rem;
+}

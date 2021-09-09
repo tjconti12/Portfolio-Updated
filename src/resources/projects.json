@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "title": "Güdeeds",
+        "description": "Community for Caregivers to Request and Offer Help",
+        "url": "https://www.gudeeds.xyz",
+        "repo": "https://github.com/tjconti12/favorsApp_FE",
+        "motivation": "This project was completed as part of a three day Hackathon event. Together with a team of UX designers and software developers, we were given the task of creating new technology for caregivers. Within a few hours, the idea for Güdeeds was created.",
+        "buildStatus": "Currently the application is designed for mobile. The application includes the use of a backend with a working database. Some stretch features such as user profiles is currently missing.",
+        "tech": "MERN stack application. React with Material UI and axios on the front end. Express, Node, and MongoDB on the backend/",
+        "features": "The application includes user authentication. A new user can register for an account and existing users can log in. Once logged in, the user is redirected to the home page. On the home page, the user can add a new request for help, or view exsisting requests to offer help. There is also a user profile page which is not fully functional at this time.",
+        "photos": [
+            {"url": "/ProjectImages/gudeeds/gudeeds1.png", "legend": "Log In Page"},
+            {"url": "/ProjectImages/gudeeds/gudeeds2.png", "legend": "Home Screen"},
+            {"url": "/ProjectImages/gudeeds/gudeeds3.png", "legend": "Add Event"},
+            {"url": "/ProjectImages/gudeeds/gudeeds4.png", "legend": "Event Detail"},
+            {"url": "/ProjectImages/gudeeds/gudeeds5.png", "legend": "My Schedule"},
+            {"url": "/ProjectImages/gudeeds/gudeeds6.png", "legend": "Profile Page"}
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Cat Crusader",
+        "description": "Fun nintendo style browser based game",
+        "url": "https://tjconti12.github.io/Cat-Crusader/",
+        "repo": "https://github.com/tjconti12/Cat-Crusader",
+        "motivation": "I was inspired to make a tile based game using vanilla javascript, html, and css. I wanted to create a fun and challenging game where the player has full control of the character. I wanted to test my modularity and organization by being able to reuse multiple sections of code.",
+        "buildStatus": "The game is currently playable up to level 4. It also includes a tutorial level that is optional. There are a few bugs present with the collision mechanics where the player will randomly fall through a platform when jumping on it. Currently, if the game throws an error, the entire application freezes.",
+        "tech": "Vanilla javascript, html, and sass for css. Used an application called tiled for making the maps.",
+        "features": "The game features a reusable tile map builder. You can get the map numbers from tiled when exporting as a js map file. Then just update the map array, the map column and row numbers, pixel size, and the tile atlas row numbers and column numbers. This allows the creation of multiple maps using multiple different tilesets. The game also includes AI enemy characters that move on their own.",
+        "photos": [
+            {"url": "/ProjectImages/catCrusader/Cat1.png", "legend": "Main Menu"},
+            {"url": "/ProjectImages/catCrusader/Cat2.png", "legend": "Level 1 - Escaping From Home"},
+            {"url": "/ProjectImages/catCrusader/Cat3.png", "legend": "Level 2 - Leaving the Neighborhood"},
+            {"url": "/ProjectImages/catCrusader/Cat4.png", "legend": "Level 3 - Lost In The Woods"},
+            {"url": "/ProjectImages/catCrusader/Cat5.png", "legend": "Level 4 - Out To Sea"}
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Get Away",
+        "description": "Web Application for finding great local foods, hot spots, and events",
+        "url": "https://get-away.netlify.app/#/",
+        "repo": "https://github.com/tjconti12/GetAway",
+        "motivation": "I have always been inspired to make an application that focuses on locating great local things to do. The best way to find cool new spots is to see what others have said about it. This is an early release, however the goal is to add a lot more features that really make this application stand out.",
+        "buildStatus": "The application is currently in an early release. All search data is being received through the Yelp Api. One future feature that will really make this application stand out, is the planned release of a routing feature. The user will be asked how long they want to explore for (15 minutes, 30 minutes, 1 hour). Then the application will match the user with local events, restaurants, bars, parks, etc. that they can explore for their selected time. Using the power of Mapbox routing, the application will give them the best route to hit the best spots in the alloted time.",
+        "tech": "React, REST API, Material-ui, node dependencies.",
+        "features": "Currently the user has the option of searching using three pre selected categories or using a custom search. The three categories are food, explore, and events. The application includes a fully functional map with search capabilites and user location based searching.",
+        "photos": [
+            {"url": "/ProjectImages/getAway/GetAway1.png", "legend": "Home Screen"},
+            {"url": "/ProjectImages/getAway/GetAway2.png", "legend": "Search Function"},
+            {"url": "/ProjectImages/getAway/GetAway3.png", "legend": "Map"},
+            {"url": "/ProjectImages/getAway/GetAway4.png", "legend": "Map Popup"},
+            {"url": "/ProjectImages/getAway/GetAway5.png", "legend": "Custom Search"},
+            {"url": "/ProjectImages/getAway/GetAway6.png", "legend": "Search Results"}
+        ]
+    },
+    {
+    "id": 4,
+    "title": "Travlr",
+    "description": "Yelp style full stack web application where users can retrieve and add entries of local food and drinks in the NYC area",
+    "url": "https://travlr-group.netlify.app/",
+    "repo": "https://github.com/tjconti12/Hip_yelp_front",
+    "motivation": "This page was inspired by the popular search sites such as yelp and foursquare. This was a group collaboration, and the group wanted to create a clean and useful alternative to the other popular food/drink sites.",
+    "buildStatus": "The application is fully functional for food and drink categories. Future plans would include other categories, a way for users to update existing entries, and user authentication. We also would like the add a rating system for each of the entries.",
+    "tech": "React, css, and REST APIs for front end, python and django for back end.",
+    "features": "The ability to add new entries to the database, with selectable tags for each place. When a user inputs an address into the new entry form, the address is run through a geocoder that returns the longitude and latitude before storing to the database. This allows the new location to appear at the correct spot on the map.",
+    "photos": [
+        {"url": "/ProjectImages/travlr/Travlr1.png", "legend": "Home Screen"},
+        {"url": "/ProjectImages/travlr/Travlr2.png", "legend": "Food List"},
+        {"url": "/ProjectImages/travlr/Travlr3.png", "legend": "Detailed Food Page"},
+        {"url": "/ProjectImages/travlr/Travlr4.png", "legend": "Add New Entry"}
+    ]
+    },
+    {
+        "id": 5,
+        "title": "Tailwind Aviation",
+        "description": "Rent a plane for an hour, two hours, or even the whole day! Tailwind aviation is a mock airplane rental company. Make an account, login, and travel to a new destination! ",
+        "url": "https://tailwind-aviation.netlify.app/",
+        "repo": "https://github.com/tjconti12/tailwind-aviation-front",
+        "motivation": "With my background in aviation, I have rented aircraft from multiple different places. I was inspired by a particular website, that lacked modern styling and features. There had to be a better way to set up scheduling.",
+        "buildStatus": "Currently, anyone can quickly see availability in real time. Once a user registers, they are able to reserve a spot if available. The website is only missing the ability to handle billing and payments, which will not be added since this is a mock up site.",
+        "tech": "React, Javascript, tailwind Css, Material-ui, Material-ui/pickers, moment js, react-calendar, react-calendar-timeline, react-responsive-carousel, craco, tailwindcss",
+        "features": "The site contains user authentication. New Users can register for an account, or returning users can log into their account. Once logged in, the add to calendar button becomes visible. The user can now go in and add to the schedule.",
+        "photos": [
+            {"url": "/ProjectImages/tailwind/homepage.png", "legend": "Home Screen"},
+            {"url": "/ProjectImages/tailwind/calendar.png", "legend": "Calendar"},
+            {"url": "/ProjectImages/tailwind/scheduler.png", "legend": "Plane Scheduler"},
+            {"url": "/ProjectImages/tailwind/addEvent.png", "legend": "Reserve a Plane"},
+            {"url": "/ProjectImages/tailwind/location.png", "legend": "Location Page"},
+            {"url": "/ProjectImages/tailwind/planes.png", "legend": "Plane Page"}
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Space Battle",
+        "description": "Click Based Browser Game using DOM manipulation and gifs for animation",
+        "url": "https://tjconti12.github.io/Space-Battle/",
+        "repo": "https://github.com/tjconti12/Space-Battle",
+        "motivation": "This project was one of the first DOM manipulation projects that I worked on. I wanted to make a game visually pleasing. Since I was new to javascript and DOM manipulation, all the animations were created in photoshop as Gifs.",
+        "buildStatus": "The game is fully functional in the Web Browser. Also, the game has been optimized for mobile as well. The game is able to randomize the health, hitpoints, and accuracy of each of the enemy alien ships.",
+        "tech": "Javascript with DOM manipulation, html, and css. Photoshop was used to create the Gifs used for the main page and the laser animation.",
+        "features": "The game features a hero ship, and 5 enemy alien ship. The player always gets to go first. The player has the option to attack or run away. If the player runs away, the game is over. After the player attacks, the enemy has a chance to attack if they are still alive. One the enemy runs out of health, the next enemy will move into its place. The game continues until either the player defeats all of the enemy ships, or the player is defeated by the aliens.",
+        "photos": [
+            {"url": "/ProjectImages/spacebattle/Space1.png", "legend": "Home Screen"},
+            {"url": "/ProjectImages/spacebattle/Space2.png", "legend": "Fight or Run"},
+            {"url": "/ProjectImages/spacebattle/Space3.png", "legend": "Enemies Approach"},
+            {"url": "/ProjectImages/spacebattle/Space4.png", "legend": "First Enemy"},
+            {"url": "/ProjectImages/spacebattle/Space5.png", "legend": "Defeating Enemy"},
+            {"url": "/ProjectImages/spacebattle/Space6.png", "legend": "Game Over!"}
+        ]
+    },
+    {
+        "id": 7,
+        "title": "First Portfolio",
+        "description": "Random Stuff",
+        "url": "https://tjconti12.github.io//",
+        "repo": "https://github.com/tjconti12/",
+        "motivation": "This project was one of the first DOM manipulation projects that I worked on. I wanted to make a game visually pleasing. Since I was new to javascript and DOM manipulation, all the animations were created in photoshop as Gifs.",
+        "buildStatus": "The game is fully functional in the Web Browser. Also, the game has been optimized for mobile as well. The game is able to randomize the health, hitpoints, and accuracy of each of the enemy alien ships.",
+        "tech": "Javascript with DOM manipulation, html, and css. Photoshop was used to create the Gifs used for the main page and the laser animation.",
+        "features": "The game features a hero ship, and 5 enemy alien ship. The player always gets to go first. The player has the option to attack or run away. If the player runs away, the game is over. After the player attacks, the enemy has a chance to attack if they are still alive. One the enemy runs out of health, the next enemy will move into its place. The game continues until either the player defeats all of the enemy ships, or the player is defeated by the aliens.",
+        "photos": [
+            
+        ]
+    }
+]
