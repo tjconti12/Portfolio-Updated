@@ -20,7 +20,16 @@
     margin: 10px 0;
 }
 
+.list-item-projects {
+    cursor: pointer;
+}
+
 .list-item-secondary {
     font-size: 2rem;
     margin: 10px 0 10px 20px;
+}
+
+.link-tag {
+    text-decoration: none;
+    color: #FFFFFF;
 }

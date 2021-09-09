@@ -4,7 +4,7 @@ import './Projects.css';
 const Projects = () => {
     return (
         <div>
-            <ProjectDetail />
+            
         </div>
     )
 }

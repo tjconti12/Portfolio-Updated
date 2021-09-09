@@ -1,24 +1,22 @@
-import { useState } from "react";
+import { Switch, Route } from "react-router-dom";
 
-import HamburgerMenuComponent from "./Components/HamburgerMenu/HamburgerMenuComponent";
-import Header from "./Components/Header/Header";
-import Menu from "./Components/Menu/Menu";
-import Projects from "./Components/Projects/Projects";
+import HomePage from "./Components/Pages/HomePage/HomePage";
+import ProjectsPage from "./Components/Pages/ProjectsPage/ProjectsPage";
 
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    menuOpen === true ? setMenuOpen(false) : setMenuOpen(true)
-  }
 
   return (
     <div className="App">
-      <Header menuOpen={menuOpen}/>
-      <HamburgerMenuComponent toggleMenu={toggleMenu} menuOpen={menuOpen}/>
-      { menuOpen && <Menu/>}
-      {/* <Projects /> */}
+      <Switch>
+        <Route path="/" exact>
+          <HomePage />
+        </Route>
+        <Route path="/projects" exact>
+          <ProjectsPage />
+        </Route>
+      </Switch>
     </div>
   );
 }
