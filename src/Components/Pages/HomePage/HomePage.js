@@ -1,22 +1,16 @@
 import { useState } from "react";
 
-import Header from "../../Header/Header"
+import Banner from "../../Banner/Banner"
 import HamburgerMenuComponent from "../../HamburgerMenu/HamburgerMenuComponent"
 import Menu from "../../Menu/Menu"
 
-const HomePage = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-      menuOpen === true ? setMenuOpen(false) : setMenuOpen(true)
-    }
-
+const HomePage = ({ menuOpen, toggleMenu}) => {
 
     return (
         <div>
-            <Header menuOpen={menuOpen}/>
-            <HamburgerMenuComponent toggleMenu={toggleMenu} menuOpen={menuOpen}/>
-            { menuOpen && <Menu/>}
+            <Banner menuOpen={menuOpen}/>
+            <HamburgerMenuComponent toggleMenu={toggleMenu} menuOpen={menuOpen} color="#ffffff"/>
+            { menuOpen && <Menu toggleMenu={toggleMenu}/>}
         </div>
     )
 }

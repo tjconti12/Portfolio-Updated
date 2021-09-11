@@ -8,7 +8,7 @@ import './Projects.css';
 const Projects = () => {
     return (
         <div className="project-list-container">
-            {projectInfo.default.map((project) => <Link to={`/projects/${project.title}`}><ProjectCard title={project.title} displayPhoto={project.photos[0]}/></Link>)}
+            {projectInfo.default.map((project) => <Link className="project-link" to={`/projects/${project.title}`}><ProjectCard title={project.title} displayPhoto={project.photos[0]}/></Link>)}
         </div>
     )
 }

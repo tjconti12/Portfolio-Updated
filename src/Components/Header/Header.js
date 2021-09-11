@@ -1,13 +1,13 @@
-
+import { Link } from 'react-router-dom';
 
 import './Header.css';
 
-const Header = ({ menuOpen }) => {
-
+const Header = () => {
     return (
-        <div className="banner-container">
-            {!menuOpen && <h1 className="banner-text">Tyler Conti</h1>}
-            
+        <div className="gray-line-container">
+            <div className="gray-line"></div>
+            <Link className="link" to="/"><h1 className="logo">Tyler Conti</h1></Link>
+            <div className="gray-line"></div>
         </div>
     )
 }

@@ -1,3 +1,7 @@
 .project-list-container {
     column-count: 1;   
 }
+
+.project-link {
+    text-decoration: none;
+}

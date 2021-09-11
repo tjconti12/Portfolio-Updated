@@ -1,0 +1,33 @@
+.project-detail-container {
+    font-size: 1.5rem;
+    padding: 0 20px;
+}
+
+.project-title {
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.project-h3 {
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.project-p {
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 20px;
+}

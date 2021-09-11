@@ -1,28 +1,41 @@
+import * as projectData from '../../resources/projects.json';
+
+import { useLocation } from 'react-router-dom';
 import './ProjectDetail.css';
 
-const ProjectDetail = () => {
+const ProjectDetail = ({ props }) => {
+    // Getting the url parameter to query the correct data
+    let fullPath = useLocation();
+    // useLocation returns an object so I need the pathname property. This would be /projects/name
+    // Then spliting it returns an array of ['/', 'projects', 'name']
+    let path = fullPath.pathname.split('/')
+    //  So I grab the third item
+    let projectName = path[2]
+
+    // Searching the data for the correct project based on its title
+    let currentProject = projectData.default.find(obj => obj.title === projectName);
+    
     return (
-        <div>
-            <h2>Travlr</h2>
-            <h4>Yelp style full stack web application where users can retrieve and add entries of local food and drinks in the NYC area</h4>
+        <div className="project-detail-container">
+            <h2 className="project-title">{currentProject.title}</h2>
+            <h4 className="project-description">{currentProject.description}</h4>
             
-            <h3>Motivation</h3>
-            <p>This page was inspired by the popular search sites such as yelp and foursquare. This was a group collaboration, and the group wanted to create a clean and useful alternative to the other popular food/drink sites.</p>
+            <h3 className="project-h3">Motivation</h3>
+            <p className="project-p">{currentProject.motivation}</p>
             
-            <h3>Build Status</h3>
-            <p>The application is fully functional for food and drink categories. Future plans would include other categories, a way for users to update existing entries, and user authentication. We also would like the add a rating system for each of the entries.</p>
+            <h3 className="project-h3">Build Status</h3>
+            <p className="project-p">{currentProject.buildStatus}</p>
 
-            <h3>Tech/Framework Used</h3>
-            <p>React, css, and REST APIs for front end, python and django for back end.</p>
+            <h3 className="project-h3">Tech/Framework Used</h3>
+            <p className="project-p">{currentProject.tech}</p>
 
-            <h3>Features</h3>
-            <p>The ability to add new entries to the database, with selectable tags for each place. When a user inputs an address into the new entry form, the address is run through a geocoder that returns the longitude and latitude before storing to the database. This allows the new location to appear at the correct spot on the map.</p>
+            <h3 className="project-h3">Features</h3>
+            <p className="project-p">{currentProject.features}</p>
 
             <div>
                 <button>View Code</button>
                 <button>Live Application</button>
             </div>
-
         </div>
     )
 }

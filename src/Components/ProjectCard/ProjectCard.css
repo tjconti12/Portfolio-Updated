@@ -9,6 +9,7 @@
     height: 220px;
     margin: 0 auto;
     overflow: hidden;
+    
 }
 
 .card-image {
@@ -28,4 +29,6 @@
     font-style: normal;
     text-align: center;
     margin-top: 0.5rem;
+    color: #707070;
+    text-decoration: none;
 }
