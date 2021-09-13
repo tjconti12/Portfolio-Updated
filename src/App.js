@@ -3,10 +3,12 @@ import { Switch, Route } from "react-router-dom";
 import HamburgerMenuComponent from './Components/HamburgerMenu/HamburgerMenuComponent';
 import Header from "./Components/Header/Header";
 
-import HomePage from "./Components/Pages/HomePage/HomePage";
+import Banner from "./Components/Banner/Banner";
 import ProjectsPage from "./Components/Pages/ProjectsPage/ProjectsPage";
 import ProjectDetail from './Components/ProjectDetail/ProjectDetail';
 import Menu from './Components/Menu/Menu';
+import Footer from './Components/Footer/Footer';
+import AboutMe from './Components/Pages/AboutMe/AboutMe';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,17 +28,29 @@ useEffect(() => {
     <div className="App">
       <Switch>
         <Route path="/" exact>
-          <HomePage menuOpen={menuOpen} toggleMenu={toggleMenu}/>
+          <Banner menuOpen={menuOpen}/>
+          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={'white'}/>
+          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
         </Route>
         <Route path="/projects" exact>
-          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color="black"/>
-          { menuOpen && <Menu toggleMenu={toggleMenu}/>}
+          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
+          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
           <Header />
           <ProjectsPage />
+          <Footer />
         </Route>
         <Route path="/projects/:project">
+          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
+          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
           <Header />
           <ProjectDetail />
+          <Footer />
+        </Route>
+        <Route path="/AboutMe">
+          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
+          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
+          <Header />
+          <AboutMe />
         </Route>
       </Switch>
     </div>

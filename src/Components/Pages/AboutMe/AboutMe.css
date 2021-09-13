@@ -1,0 +1,58 @@
+.aboutme-container {
+    padding: 0 20px;
+}
+
+.aboutme-title {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aboutme-column-container {
+    columns: 1;
+}
+
+.aboutme-profile-img-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.aboutme-profile-img {
+    width: 100%;
+}
+
+.aboutme-occupation {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.aboutme-brand-statement {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.aboutme-skills {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.aboutme-list-container {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 230px; */
+    columns: 2;
+}
+
+.aboutme-list-item {
+    font-size: 1.5rem;
+    width: 100px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.aboutme-list-style {
+    font-size: 1rem;
+    margin: 0 2px;
+}

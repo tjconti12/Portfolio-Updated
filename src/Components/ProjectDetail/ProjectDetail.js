@@ -32,9 +32,18 @@ const ProjectDetail = ({ props }) => {
             <h3 className="project-h3">Features</h3>
             <p className="project-p">{currentProject.features}</p>
 
-            <div>
-                <button>View Code</button>
-                <button>Live Application</button>
+            <div className="project-button-container">
+                <a className="project-button" href={currentProject.repo} target="_blank" rel="noopener noreferrer">View Code</a>
+                <a className="project-button" href={currentProject.url} target="_blank" rel="noopener noreferrer">Live Application</a>
+            </div>
+            <div className="project-images-container">
+                {currentProject.photos.map(photo => {
+                    return (
+                        <div className="project-photo-container">
+                            <img src={photo.url} alt={photo.legend} className="project-photo"/>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )
