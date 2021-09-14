@@ -9,11 +9,15 @@ const Header = ({ title }) => {
 
     const goBack = () => history.goBack();
 
+    // Dynamic path for the header
+    // Allows user to return to the page that is being displayed by the header
+    // splitting and joining to remove the space (example: /About Me changes to /AboutMe)
+    const path = title.split(' ').join('');
 
     return (
         <div className="gray-line-container">
             <div className="gray-line"></div>
-            <Link className="link" to="/"><h1 className="logo">{title}</h1></Link>
+            <Link className="link" to={`/${path}`}><h1 className="logo">{title}</h1></Link>
             <div className="gray-line"></div>
             <button className="back-button" onClick={goBack}>Back</button>
         </div>

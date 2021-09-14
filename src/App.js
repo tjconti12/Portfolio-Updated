@@ -31,7 +31,7 @@ useEffect(() => {
         <Route path="/" exact>
           <Banner menuOpen={menuOpen}/>
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={'white'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
+          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="transparent"/>}
         </Route>
         <Route path="/projects" exact>
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>

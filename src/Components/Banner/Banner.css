@@ -2,7 +2,7 @@
     width: 100vw;
     height: 90vh;
     margin: 0 auto;
-    background-color: #274B63;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,35 @@
 .banner-text {
     font-size: 7rem;
     color: #FFFFFF;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    z-index: 2;
 }
 
 
+
+/* Option One */
+
+.banner-background-container {
+    width: 0vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.banner-background-image {
+    height: 100%;
+    transform: translateX(-40%);
+    
+}
+
+/* Option Two */
+
+
+/* .banner-background-container {
+    width: 100vw;
+    position: absolute;
+}
+
+.banner-background-image {
+    width: 100%;
+    transform: translateY(-5%);
+} */
