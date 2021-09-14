@@ -18,8 +18,8 @@ const Header = ({ title }) => {
         <div className="gray-line-container">
             <div className="gray-line"></div>
             <Link className="link" to={`/${path}`}><h1 className="logo">{title}</h1></Link>
+            <div className="back-button" onClick={goBack}>&#8249;</div>
             <div className="gray-line"></div>
-            <button className="back-button" onClick={goBack}>Back</button>
         </div>
     )
 }
