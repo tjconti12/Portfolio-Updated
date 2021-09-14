@@ -5,7 +5,6 @@ import './AboutMe.css';
 const AboutMe = () => {
     return (
         <div className="aboutme-container">
-            <h2 className="aboutme-title">About Me</h2>
             <div className="aboutme-column-container">
                 <div className="aboutme-profile-img-container">
                     <img className="aboutme-profile-img" src={profilePic} alt="Tyler Professional Pose" />
