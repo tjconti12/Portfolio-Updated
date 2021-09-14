@@ -10,7 +10,7 @@ const Menu = ({ toggleMenu, backGroundColor }) => {
             <ul className="menu-list-main">
                 <Link className="link-tag" to="/AboutMe" onClick={toggleMenu}><li className="list-item-main">About Me</li></Link>
                 <Link className="link-tag" to="/projects" onClick={toggleMenu}><li className="list-item-main list-item-projects">Projects</li></Link>
-                <li className="list-item-main">Contact Me</li>
+                <Link className="link-tag" to="/ContactMe" onClick={toggleMenu}><li className="list-item-main">Contact Me</li></Link>
             </ul>
         </div>
     )

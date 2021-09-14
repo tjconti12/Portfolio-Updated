@@ -9,6 +9,7 @@ import ProjectDetail from './Components/ProjectDetail/ProjectDetail';
 import Menu from './Components/Menu/Menu';
 import Footer from './Components/Footer/Footer';
 import AboutMe from './Components/Pages/AboutMe/AboutMe';
+import ContactMe from './Components/Pages/ContactMe/ContactMe';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,22 +36,28 @@ useEffect(() => {
         <Route path="/projects" exact>
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
           { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
-          <Header />
+          <Header title="Projects"/>
           <ProjectsPage />
           <Footer />
         </Route>
         <Route path="/projects/:project">
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
           { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
-          <Header />
+          <Header title="Projects"/>
           <ProjectDetail />
           <Footer />
         </Route>
         <Route path="/AboutMe">
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
           { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
-          <Header />
+          <Header title="About Me"/>
           <AboutMe />
+          <Footer />
+        </Route>
+        <Route path="/ContactMe">
+          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
+          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
+          <ContactMe />
         </Route>
       </Switch>
     </div>
