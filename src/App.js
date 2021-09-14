@@ -31,32 +31,32 @@ useEffect(() => {
         <Route path="/" exact>
           <Banner menuOpen={menuOpen}/>
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={'white'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="transparent"/>}
+          { menuOpen && <Menu toggleMenu={toggleMenu} />}
         </Route>
         <Route path="/projects" exact>
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
+          { menuOpen && <Menu toggleMenu={toggleMenu} />}
           <Header title="Projects"/>
           <ProjectsPage />
           <Footer />
         </Route>
         <Route path="/projects/:project">
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
+          { menuOpen && <Menu toggleMenu={toggleMenu} />}
           <Header title="Projects"/>
           <ProjectDetail />
           <Footer />
         </Route>
         <Route path="/AboutMe">
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
+          { menuOpen && <Menu toggleMenu={toggleMenu} />}
           <Header title="About Me"/>
           <AboutMe />
           <Footer />
         </Route>
         <Route path="/ContactMe">
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} backGroundColor="#274B63"/>}
+          { menuOpen && <Menu toggleMenu={toggleMenu} />}
           <ContactMe />
         </Route>
       </Switch>

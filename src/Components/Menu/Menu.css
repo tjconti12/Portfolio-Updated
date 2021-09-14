@@ -19,6 +19,7 @@
 .menu-list-main {
     list-style: none;
     margin-bottom: 100px;
+    z-index: 10;
 }
 
 .list-item-main {
@@ -38,4 +39,16 @@
 .link-tag {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.menu-background-container {
+    width: 0vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.menu-background-image {
+    height: 100%;
+    transform: translateX(-40%);
+    
 }
