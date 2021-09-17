@@ -11,8 +11,9 @@ const Menu = ({ toggleMenu }) => {
         <div className="menu">
             <ul className="menu-list-main">
                 <Link className="link-tag" to="/AboutMe" onClick={toggleMenu}><li className="list-item-main">About Me</li></Link>
-                <Link className="link-tag" to="/projects" onClick={toggleMenu}><li className="list-item-main list-item-projects">Projects</li></Link>
+                <Link className="link-tag" to="/projects" onClick={toggleMenu}><li className="list-item-main">Projects</li></Link>
                 <Link className="link-tag" to="/ContactMe" onClick={toggleMenu}><li className="list-item-main">Contact Me</li></Link>
+                <a className="list-item-main link-tag" onClick={toggleMenu} href="https://drive.google.com/file/d/1K3KIL9UTxakfBTXfYe8c5H73BTG26-Ot/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
             </ul>
             <div className="menu-background-container">
                 <img className="menu-background-image" src={background} alt="background of clouds in the sky with a filter" />
