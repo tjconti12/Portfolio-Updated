@@ -24,11 +24,14 @@
     text-transform: uppercase;
 }
 
-.back-button {
+.back-button-container {
+    width: 50px;
     position: absolute;
-    top: 0px;
+    top: -10px;
     left: 20px;
     z-index: 9;
-    font-size: 5rem;
-    
+}
+
+.back-button {
+    width: 100%;
 }
