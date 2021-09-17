@@ -36,5 +36,20 @@
 }
 
 .contactMe-submit {
-    
+    max-width: 120px;
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
 }
