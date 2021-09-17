@@ -57,7 +57,9 @@ useEffect(() => {
         <Route path="/ContactMe">
           <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
           { menuOpen && <Menu toggleMenu={toggleMenu} />}
+          <Header title="Contact Me"/>
           <ContactMe />
+          <Footer />
         </Route>
       </Switch>
     </div>
