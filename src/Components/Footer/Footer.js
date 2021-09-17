@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import linkedin from '../../resources/images/linkedin.png';
 import medium from '../../resources/images/Medium.png';
 import github from '../../resources/images/github.png';
@@ -22,7 +24,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <h4 className="footer-name">&copy; Tyler Conti <span className="footer-after-name">|</span> Portfolio</h4>
+                <Link to="/" className="footer-link"><h4 className="footer-name">&copy; Tyler Conti <span className="footer-after-name">|</span> Portfolio</h4></Link>
             </div>
         </div>
     )

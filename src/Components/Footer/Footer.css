@@ -52,6 +52,12 @@
     margin: 0 10px;
 }
 
+.footer-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 .footer-bottom {
     height: 120px;
     background-color: #231f20;
