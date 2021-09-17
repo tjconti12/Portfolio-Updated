@@ -10,6 +10,7 @@ import Menu from './Components/Menu/Menu';
 import Footer from './Components/Footer/Footer';
 import AboutMe from './Components/Pages/AboutMe/AboutMe';
 import ContactMe from './Components/Pages/ContactMe/ContactMe';
+import UpArrow from './Components/UpArrow/UpArrow';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
