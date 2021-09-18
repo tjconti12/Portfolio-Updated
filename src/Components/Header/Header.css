@@ -4,6 +4,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 180px;
+    cursor: pointer;
 }
 
 .header-logo {
@@ -37,9 +38,9 @@
 }
 
 .back-button-container {
-    width: 50px;
+    width: 35px;
     position: absolute;
-    top: -10px;
+    top: 5px;
     left: 20px;
     z-index: 9;
 }

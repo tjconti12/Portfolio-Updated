@@ -18,8 +18,8 @@ const HamburgerMenuComponent = ({ toggleMenu, menuOpen, color }) => {
                 isOpen={menuOpen} 
                 menuClicked={toggleMenu} 
                 color={color} 
-                width={30}
-                height={20}    
+                width={21}
+                height={14}    
             />
         </div>
     )

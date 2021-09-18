@@ -20,7 +20,7 @@ const Header = ({ title }) => {
     return (
         <div className="gray-line-container">
             <div className="header-logo-container">
-                <img className="header-logo" src={logo} alt="Tyler Conti Logo" />
+                <Link to="/"><img className="header-logo" src={logo} alt="Tyler Conti Logo" /></Link>
             </div>
             <div className="gray-line"></div>
             <Link className="link" to={`/${path}`}><h1 className="logo">{title}</h1></Link>
