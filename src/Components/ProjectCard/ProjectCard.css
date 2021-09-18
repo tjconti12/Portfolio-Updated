@@ -5,11 +5,13 @@
 }
 
 .card-image-container {
-    width: 240px;
+    width: 220px;
     height: 220px;
     margin: 0 auto;
     overflow: hidden;
-    
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.44);
+    /* box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.44); */
+    /* box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.44) */
 }
 
 .card-image {

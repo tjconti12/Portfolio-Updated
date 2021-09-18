@@ -1,6 +1,6 @@
 .banner-container {
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
     margin: 0 auto;
     
     display: flex;
@@ -8,13 +8,15 @@
     align-items: center;
 }
 
-.banner-text {
-    font-size: 7rem;
-    color: #FFFFFF;
+.banner-logo-container {
+    width: 350px;
+    z-index: 100;
     margin-bottom: 20px;
-    z-index: 2;
 }
 
+.banner-logo {
+    width: 100%;
+}
 
 
 /* Option One */
@@ -28,6 +30,7 @@
 .banner-background-image {
     height: 100%;
     transform: translateX(-40%);
+    
     
 }
 

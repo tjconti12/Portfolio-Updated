@@ -6,7 +6,7 @@ const ProjectCard = ({ title, displayPhoto }) => {
     return (
         <div className="card-container">
             <div className="card-image-container">
-                <img className="card-image" src={displayPhoto ? displayPhoto.url : placeHolderImg} alt="place holder"/>
+                <img className="card-image" src={displayPhoto ? displayPhoto : placeHolderImg} alt="place holder"/>
             </div>
             <h2 className="card-title">{title || 'Project Title'}</h2>
         </div>
