@@ -9,6 +9,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
 }
 
 .footer-more-info {
@@ -27,7 +28,7 @@
     height: 50px;
     display: flex;
     align-items: center;
-    margin: 0 10px;
+    margin: 0px 10px;
 }
 
 .footer-logo-container-medium {

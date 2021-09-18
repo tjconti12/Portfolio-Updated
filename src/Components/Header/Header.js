@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router';
 
+import logo from '../../resources/images/LogoBlack.png';
 import backArrow from '../../resources/images/Arrowhead.png';
 
 import './Header.css';
@@ -18,6 +19,9 @@ const Header = ({ title }) => {
 
     return (
         <div className="gray-line-container">
+            <div className="header-logo-container">
+                <img className="header-logo" src={logo} alt="Tyler Conti Logo" />
+            </div>
             <div className="gray-line"></div>
             <Link className="link" to={`/${path}`}><h1 className="logo">{title}</h1></Link>
             {/* <div className="back-button" onClick={goBack}>&#8249;</div> */}

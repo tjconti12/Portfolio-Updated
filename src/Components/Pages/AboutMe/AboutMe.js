@@ -39,6 +39,7 @@ const AboutMe = () => {
                     <li className="aboutme-list-item"><span className="aboutme-list-style">•</span>Photoshop</li>
                 </ul>
             </div>
+            <a className="aboutme-resume-button" href="https://drive.google.com/file/d/1K3KIL9UTxakfBTXfYe8c5H73BTG26-Ot/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
         </div>
     )
 }

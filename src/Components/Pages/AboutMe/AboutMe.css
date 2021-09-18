@@ -1,6 +1,9 @@
 .aboutme-container {
     padding: 20px;
     margin: 20px 0;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .aboutme-column-container {
@@ -19,38 +22,57 @@
 .aboutme-occupation {
     text-align: center;
     font-size: 2rem;
-    margin: 20px 0;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
 
 .aboutme-brand-statement {
+    margin: auto;
+    margin-top: 10px;
     text-align: justify;
-    font-size: 1.5rem;
-    margin: 20px 0;
+    font-size: 1.8rem;
+    width: 90%;
 }
 
 .aboutme-skills {
     text-align: center;
     font-size: 2rem;
-    margin: 20px 0;
+    margin-top: 40px;
+    text-transform: uppercase;
 }
 
 .aboutme-list-container {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    height: 230px; */
+    margin-top: 15px;
     columns: 2;
 }
 
 .aboutme-list-item {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 100px;
     margin: 0 auto;
     list-style: none;
 }
 
 .aboutme-list-style {
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 0 2px;
+}
+
+.aboutme-resume-button {
+    max-width: 120px;
+    width: 50%;
+    height: 50px;
+    margin: 60px auto 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
 }

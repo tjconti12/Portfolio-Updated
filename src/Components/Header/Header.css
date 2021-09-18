@@ -1,3 +1,15 @@
+.header-logo-container {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+}
+
+.header-logo {
+    width: 100%;
+}
+
 .gray-line-container {
     margin-top: 80px;
     padding: 0 20px;
