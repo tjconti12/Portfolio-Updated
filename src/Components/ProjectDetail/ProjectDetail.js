@@ -15,14 +15,6 @@ const ProjectDetail = ({ props }) => {
 
     // Searching the data for the correct project based on its title
     let currentProject = projectData.default.find(obj => obj.title === projectName);
-    
-    // This useEffect is here to scroll the page to the top when clicking an individual project
-    // Got solution ideas from https://stackoverflow.com/questions/36904185/react-router-scroll-to-top-on-every-transition
-    // Implented slightly different in this application
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [fullPath]);
-
 
     return (
         <div className="project-detail-container">

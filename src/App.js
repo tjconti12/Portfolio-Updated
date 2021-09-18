@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
+
 import HamburgerMenuComponent from './Components/HamburgerMenu/HamburgerMenuComponent';
 import Header from "./Components/Header/Header";
 
@@ -18,6 +19,17 @@ function App() {
   const toggleMenu = () => {
     menuOpen === true ? setMenuOpen(false) : setMenuOpen(true)
   }
+
+
+let fullPath = useLocation();
+
+  // This useEffect is here to scroll the page to the top when changing pages
+  // Got solution ideas from https://stackoverflow.com/questions/36904185/react-router-scroll-to-top-on-every-transition
+  // Implented slightly different in this application
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, [fullPath])
 
 useEffect(() => {
   if(menuOpen) {
@@ -47,6 +59,7 @@ useEffect(() => {
           { menuOpen && <Menu toggleMenu={toggleMenu} />}
           <Header title="Projects"/>
           <ProjectDetail />
+          <UpArrow />
           <Footer />
         </Route>
         <Route path="/AboutMe">
