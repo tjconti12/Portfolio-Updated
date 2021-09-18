@@ -7,6 +7,7 @@ import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 import './ContactMe.css';
 import FormModals from '../../FormModals/FormModals';
+import ENDPOINT from '../../../config/config';
 
 const ContactMe = () => {
     const [loadingModalOpen, setLoadingModalOpen] = useState(false);
@@ -20,17 +21,17 @@ const ContactMe = () => {
         event.preventDefault();
         axios({
             method: 'POST',
-            url: process.env.REACT_APP_EMAIL_URL,
+            url: ENDPOINT,
             data: formData
         }).then(setLoadingModalOpen(true))
         .then(response => {
             if (response.data.status === 'success') {
                 setLoadingModalOpen(false);
                 setSuccessModalOpen(true);
-            } else {
-                setLoadingModalOpen(false);
-                setFailedModalOpen(true);
             }
+        }).catch(error => {
+            setLoadingModalOpen(false);
+            setFailedModalOpen(true);
         })
     }
 
