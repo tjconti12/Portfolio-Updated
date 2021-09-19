@@ -23,7 +23,7 @@ const Header = ({ title }) => {
                 <Link to="/"><img className="header-logo" src={logo} alt="Tyler Conti Logo" /></Link>
             </div>
             <div className="gray-line"></div>
-            <Link className="link" to={`/${path}`}><h1 className="logo">{title}</h1></Link>
+            <Link className="link" to={`/${path}`}><h1 className="header-title">{title}</h1></Link>
             {/* <div className="back-button" onClick={goBack}>&#8249;</div> */}
             <div className="back-button-container">
                 <img className="back-button" onClick={goBack} src={backArrow} alt="back arrow" />

@@ -61,6 +61,7 @@ const ContactMe = () => {
                         value={formData.name}
                         onChange={e => handleFormChange(e)}
                         required
+                        placeholder="John Doe"
                     />
                 </div>
                 <div className="contactMe-form-group">
@@ -72,6 +73,7 @@ const ContactMe = () => {
                         value={formData.email} 
                         onChange={e => handleFormChange(e)}
                         required
+                        placeholder="JohnDoe@mail.com"
                     />    
                 </div>
                 <div className="contactMe-form-group">
@@ -82,7 +84,9 @@ const ContactMe = () => {
                         rows="5" 
                         value={formData.message}
                         onChange={e => handleFormChange(e)}
-                        required>
+                        required
+                        placeholder="Your Message"
+                        >
                     </textarea>    
                 </div>
                 <button type="submit" className="contactMe-submit">Submit</button>

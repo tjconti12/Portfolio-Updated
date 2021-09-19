@@ -1,5 +1,8 @@
 .footer {
     height: 240px;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .footer-top {
@@ -14,7 +17,7 @@
 
 .footer-more-info {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .footer-connection-logos-container {
@@ -45,7 +48,7 @@
 }
 
 .footer-name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
 }
 
@@ -60,7 +63,7 @@
 }
 
 .footer-bottom {
-    height: 120px;
+    height: 100px;
     background-color: #231f20;
     color: white;
     display: flex;
