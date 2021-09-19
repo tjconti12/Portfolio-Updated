@@ -1,8 +1,7 @@
 .banner-container {
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     margin: 0 auto;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,9 +21,10 @@
 /* Option One */
 
 .banner-background-container {
-    width: 0vw;
+    width: 100vw;
     height: 100vh;
     position: absolute;
+    overflow: hidden;
 }
 
 .banner-background-image {
