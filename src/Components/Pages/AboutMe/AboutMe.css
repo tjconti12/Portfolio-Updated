@@ -76,3 +76,58 @@
     color: white;
     font-size: 1.6rem;
 }
+/* Responsive Designs */
+
+@media only screen and (min-width: 500px) {
+    .aboutme-profile-img-container {
+        width: 300px;
+    }
+  }
+
+
+@media only screen and (min-width: 600px) {
+    
+    .aboutme-container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url(../../../resources/images/backgroundHorizontal.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 40px 0px;
+        margin: -20px 0px;
+        z-index: -1;
+    }
+    
+    .aboutme-column-container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+    }
+
+    .aboutme-left-column {
+        
+    }
+
+    .aboutme-right-column {
+        
+    }
+
+    .aboutme-profile-img-container {
+      
+    }
+
+    .aboutme-occupation {
+      
+    }
+
+    .aboutme-brand-statement {
+        
+    }
+    
+    .aboutme-skills {
+        
+    }
+    
+    .aboutme-list-container {
+
+    }
+}
+
