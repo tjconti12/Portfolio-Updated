@@ -13,7 +13,7 @@
         "laptop": "/ProjectImages/gudeeds/gudeedsLaptop.png",
         "phone": "/ProjectImages/gudeeds/gudeedsPhone.png",
         "photos": [
-            {"url": "/ProjectImages/gudeeds/gudeeds2.png", "legend": "Home Screen"},
+            {"url": "/ProjectImages/gudeeds/gudeeds2.png", "legend": "Home Screen After Login"},
             {"url": "/ProjectImages/gudeeds/gudeeds3.png", "legend": "Add Event"},
             {"url": "/ProjectImages/gudeeds/gudeeds4.png", "legend": "Event Detail"},
             {"url": "/ProjectImages/gudeeds/gudeeds5.png", "legend": "My Schedule"},

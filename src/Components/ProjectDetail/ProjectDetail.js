@@ -61,8 +61,8 @@ const ProjectDetail = ({ props }) => {
             <div className="project-images-container">
                 {currentProject.photos.map(photo => {
                     return (
-                        <div className="project-photo-container">
-                            <img src={photo.url} alt={photo.legend} className="project-photo"/>
+                        <div className="project-photo-container" >
+                            <img src={photo.url} alt={photo.legend} className="project-photo" />
                         </div>
                     )
                 })}
