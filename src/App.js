@@ -51,7 +51,6 @@ useEffect(() => {
           { menuOpen && <Menu toggleMenu={toggleMenu} />}
           <Header title="Projects"/>
           <ProjectsPage />
-          <UpArrow />
           <Footer />
         </Route>
         <Route path="/projects/:project">

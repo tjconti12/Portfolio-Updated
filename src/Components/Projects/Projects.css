@@ -1,7 +1,53 @@
+.project-container {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(../../resources/images/backgroundHorizontal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+}
+
 .project-list-container {
     column-count: 1;   
 }
 
+.project-h1 {
+    text-transform: uppercase;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5rem;
+    margin: 10px auto;
+    padding-left: 35px;
+}
+
 .project-link {
     text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .project-list-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        width: 600px;
+        margin: auto;
+    }
+
+    .project-h1 {
+        width: 600px;
+        
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .project-list-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+        width: 750px;
+    }
+
+    .project-h1 {
+        width: 750px;
+        padding-left: 10px;
+    }
 }
