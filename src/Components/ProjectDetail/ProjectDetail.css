@@ -1,14 +1,19 @@
 .project-detail-container {
     font-size: 1.5rem;
-    padding: 0 20px;
+    padding: 20px;
     margin-bottom: 20px;
+    background-image: linear-gradient(rgba(0, 47, 75, 0.3), rgba(0, 47, 75, 0.3)),
+    url(../../resources/images/backgroundHorizontal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f2f2f2;
 }
 
 .project-title {
     font-family: bebas-neue-pro, sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 4rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
     margin-bottom: 15px;
 }
 
@@ -16,6 +21,7 @@
     font-family: bebas-neue-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 2rem;
 }
 
 .project-h3 {
@@ -24,6 +30,7 @@
     font-style: normal;
     margin-top: 15px;
     margin-bottom: 2px;
+    font-size: 2.5rem;
 }
 
 .project-p {
@@ -31,6 +38,7 @@
     font-weight: 300;
     font-style: normal;
     line-height: 20px;
+    font-size: 1.8rem;
 }
 
 .project-button-container {
@@ -61,10 +69,30 @@
     font-size: 1.6rem;
 }
 
+.project-laptop-image-container {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.project-laptop-image {
+    width: 100%;
+}
+
+.project-phone-image-container {
+    width: 200px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+.project-phone-image {
+    width: 100%;
+}
+
 .project-images-container {
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .project-photo-container {
@@ -83,4 +111,66 @@
     Figured out how to center the oversized photo from stackoverflow. Included is the link
     https://stackoverflow.com/questions/14562457/center-oversized-image-in-div/41059954 
     */
+}
+
+@media only screen and (min-width: 800px) {
+    .project-column-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 100px;
+    }
+
+    .project-left-column {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .project-highlight-images {
+        display: flex;
+        align-items: center;
+    }
+
+    .project-laptop-image-container {
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .project-phone-image-container {
+        width: 150px;
+    }
+
+    .project-right-column {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding: 0 20px;
+        margin: 0 10px;
+    }
+
+    .project-images-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-photo-container {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .project-laptop-image-container {
+        width: 350px;
+    }
+
+    .project-phone-image-container {
+        width: 200px;
+    }
 }

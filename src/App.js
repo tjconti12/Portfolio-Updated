@@ -53,7 +53,6 @@ useEffect(() => {
         <Route path="/projects/:project">
           <Header title="Projects" menuOpen={menuOpen} toggleMenu={toggleMenu}/>
           <ProjectDetail />
-          <UpArrow />
           <Footer />
         </Route>
         <Route path="/AboutMe">

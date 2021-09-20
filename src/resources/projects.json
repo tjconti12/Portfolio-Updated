@@ -10,6 +10,8 @@
         "tech": "MERN stack application. React with Material UI and axios on the front end. Express, Node, and MongoDB on the backend/",
         "features": "The application includes user authentication. A new user can register for an account and existing users can log in. Once logged in, the user is redirected to the home page. On the home page, the user can add a new request for help, or view exsisting requests to offer help. There is also a user profile page which is not fully functional at this time.",
         "cover": "/ProjectImages/gudeeds/GudeedsCover.jpg",
+        "laptop": "/ProjectImages/gudeeds/gudeedsLaptop.png",
+        "phone": "/ProjectImages/gudeeds/gudeedsPhone.png",
         "photos": [
             {"url": "/ProjectImages/gudeeds/gudeeds1.png", "legend": "Log In Page"},
             {"url": "/ProjectImages/gudeeds/gudeeds2.png", "legend": "Home Screen"},
