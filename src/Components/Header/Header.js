@@ -1,12 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router';
 
+import { isMobile } from 'react-device-detect';
+
 import logo from '../../resources/images/LogoBlack.png';
 import backArrow from '../../resources/images/Arrowhead.png';
 
 import './Header.css';
+import Menu from '../Menu/Menu';
+import HamburgerMenu from 'react-hamburger-menu';
 
-const Header = ({ title }) => {
+const Header = ({ title, menuOpen, toggleMenu }) => {
 
     const history = useHistory();
 
@@ -18,17 +22,25 @@ const Header = ({ title }) => {
     const path = title.split(' ').join('');
 
     return (
-        <div className="gray-line-container">
+        <div className="header-container">
             <div className="header-logo-container">
                 <Link to="/"><img className="header-logo" src={logo} alt="Tyler Conti Logo" /></Link>
             </div>
-            {/* <div className="gray-line"></div>
-            <Link className="link" to={`/${path}`}><h1 className="header-title">{title}</h1></Link> */}
-            {/* <div className="back-button" onClick={goBack}>&#8249;</div> */}
             <div className="back-button-container">
                 <img className="back-button" onClick={goBack} src={backArrow} alt="back arrow" />
             </div>
-            {/* <div className="gray-line"></div> */}
+            <div className="header-hamburger-menu" style={{ marginRight: menuOpen && !isMobile && path !== '/' ? '15px' : '0px'}}>
+            
+            <HamburgerMenu 
+                    className="hamburger-menu" 
+                    isOpen={menuOpen} 
+                    menuClicked={toggleMenu} 
+                    color={menuOpen ? "white" : "black"} 
+                    width={21}
+                    height={14}    
+                />
+            </div>
+            { menuOpen && <Menu toggleMenu={toggleMenu} />}
         </div>
     )
 }

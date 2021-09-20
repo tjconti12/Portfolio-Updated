@@ -1,6 +1,5 @@
 .aboutme-container {
     padding: 20px;
-    margin: 20px 0 0;
     font-family: bebas-neue-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -8,8 +7,6 @@
     url(../../../resources/images/backgroundHorizontal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
-    margin-top: -100px;
     min-height: 80vh;
 }
 

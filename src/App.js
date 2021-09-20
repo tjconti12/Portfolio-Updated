@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useLocation } from "react-router-dom";
 
-import HamburgerMenuComponent from './Components/HamburgerMenu/HamburgerMenuComponent';
+
+
 import Header from "./Components/Header/Header";
 
 import Banner from "./Components/Banner/Banner";
@@ -42,36 +43,26 @@ useEffect(() => {
     <div className="App">
       <Switch>
         <Route path="/" exact>
-          <Banner menuOpen={menuOpen}/>
-          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={'white'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} />}
+          <Banner menuOpen={menuOpen} toggleMenu={toggleMenu}/>
         </Route>
         <Route path="/projects" exact>
-          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} />}
-          <Header title="Projects"/>
+          <Header title="Projects" menuOpen={menuOpen} toggleMenu={toggleMenu} />
           <ProjectsPage />
           <Footer />
         </Route>
         <Route path="/projects/:project">
-          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} />}
-          <Header title="Projects"/>
+          <Header title="Projects" menuOpen={menuOpen} toggleMenu={toggleMenu}/>
           <ProjectDetail />
           <UpArrow />
           <Footer />
         </Route>
         <Route path="/AboutMe">
-          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} />}
-          <Header title="About Me"/>
+          <Header title="About Me" menuOpen={menuOpen} toggleMenu={toggleMenu}/>
           <AboutMe />
           <Footer />
         </Route>
         <Route path="/ContactMe">
-          <HamburgerMenuComponent menuOpen={menuOpen} toggleMenu={toggleMenu} color={menuOpen ? 'white' : 'black'}/>
-          { menuOpen && <Menu toggleMenu={toggleMenu} />}
-          <Header title="Contact Me"/>
+          <Header title="Contact Me" menuOpen={menuOpen} toggleMenu={toggleMenu}/>
           <ContactMe />
           <Footer />
         </Route>

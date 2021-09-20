@@ -1,9 +1,12 @@
 import backgroundImage from '../../resources/images/backgroundHorizontal.jpg';
 import logo from '../../resources/images/LogoWhite.png';
 
-import './Banner.css';
+import HamburgerMenu from 'react-hamburger-menu';
 
-const Banner = ({ menuOpen }) => {
+import './Banner.css';
+import Menu from '../Menu/Menu';
+
+const Banner = ({ menuOpen, toggleMenu }) => {
     
 
     return (
@@ -16,6 +19,17 @@ const Banner = ({ menuOpen }) => {
             <div className="banner-background-container">
                 <img className="banner-background-image" src={backgroundImage} alt="background of clouds in the sky with a filter" />
             </div>
+            <div className="banner-hamburger-menu">
+                <HamburgerMenu 
+                        className="hamburger-menu" 
+                        isOpen={menuOpen} 
+                        menuClicked={toggleMenu} 
+                        color={"white"} 
+                        width={21}
+                        height={14}    
+                    />
+            </div>
+            { menuOpen && <Menu toggleMenu={toggleMenu} />}
         </div>
     )
 }
