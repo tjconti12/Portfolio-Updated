@@ -7,6 +7,7 @@ const AboutMe = () => {
         <div className="aboutme-container">
             <div className="aboutme-column-container">
                 <div className="aboutme-left-column">
+                    <h1 className="aboutme-title">About Me</h1>
                     <div className="aboutme-profile-img-container">
                         <img className="aboutme-profile-img" src={profilePic} alt="Tyler Professional Pose" />
                     </div>
@@ -41,8 +42,8 @@ const AboutMe = () => {
                         <li className="aboutme-list-item"><span className="aboutme-list-style">•</span>PostgreSQL</li>
                         <li className="aboutme-list-item"><span className="aboutme-list-style">•</span>Photoshop</li>
                     </ul>
-                    <a className="aboutme-resume-button" href="https://drive.google.com/file/d/1K3KIL9UTxakfBTXfYe8c5H73BTG26-Ot/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
                 </div>
+                <a className="aboutme-resume-button" href="https://drive.google.com/file/d/1K3KIL9UTxakfBTXfYe8c5H73BTG26-Ot/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
             </div>
                 
                 
