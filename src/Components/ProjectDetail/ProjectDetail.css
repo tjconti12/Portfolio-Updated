@@ -70,7 +70,7 @@
 }
 
 .project-laptop-image-container {
-    width: 350px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -157,7 +157,7 @@
     }
 
     .project-photo-container {
-        width: 100%;
+        max-width: 90%;
         height: 300px;
         margin: 0 auto;
         overflow: hidden;
@@ -167,7 +167,7 @@
 
 @media only screen and (min-width: 900px) {
     .project-laptop-image-container {
-        width: 350px;
+        width: 100%;
     }
 
     .project-phone-image-container {

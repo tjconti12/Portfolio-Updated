@@ -43,12 +43,16 @@ const ProjectDetail = ({ props }) => {
                         <a className="project-button" href={currentProject.url} target="_blank" rel="noopener noreferrer">Live Application</a>
                     </div>
                     <div className="project-highlight-images">
-                        <div className="project-laptop-image-container">
-                            <img className="project-laptop-image" src={currentProject.laptop} alt="Project Home Page on Desktop" />
-                        </div>
-                        <div className="project-phone-image-container">
-                            <img className="project-phone-image" src={currentProject.phone} alt="Project Home Page on Mobile" />
-                        </div>
+                       {currentProject.laptop && 
+                            <div className="project-laptop-image-container" >
+                                <img className="project-laptop-image" src={currentProject.laptop} alt="Project Home Page on Desktop" />
+                            </div> 
+                        }
+                        {currentProject.phone &&
+                            <div className="project-phone-image-container">
+                                <img className="project-phone-image" src={currentProject.phone} alt="Project Home Page on Mobile" />
+                            </div>
+                        }
 
                     </div>
                 </div>
