@@ -1,5 +1,5 @@
 .footer {
-    height: 240px;
+    height: 220px;
     font-family: bebas-neue-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -48,6 +48,15 @@
     filter: invert(0.3);
 }
 
+.footer-bottom {
+    height: 100px;
+    background-color: #231f20;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-name {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -63,11 +72,4 @@
     cursor: pointer;
 }
 
-.footer-bottom {
-    height: 100px;
-    background-color: #231f20;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
