@@ -1,10 +1,20 @@
 .contactMe {
-    margin: 40px 20px;
+    margin: 20px 20px 40px;
 }
 
-
-.contactMe-header {
+.contactMe-h1 {
+    text-transform: uppercase;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5rem;
     margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.contactMe-h2 {
+    margin-left: 20px;
+    margin-bottom: 30px;
     font-size: 2.5rem;
     font-family: bebas-neue-pro, sans-serif;
     font-weight: 400;
@@ -71,4 +81,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 650px) {
+    .contactMe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contactMe-left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .contactMe-h1 {
+        width: 200px;
+    }
+
+    .contactMe-h2 {
+        width: 200px;
+        text-align: left;
+    }
 }

@@ -50,47 +50,54 @@ const ContactMe = () => {
 
     return (
         <div className="contactMe">
-            <h2 className="contactMe-header">Lets Get in Touch!</h2>
-            <form className="contactMe-form" onSubmit={handleSubmit}>
-                <div className="contactMe-form-group">
-                    <label htmlFor="name" className="contactMe-label">Your Name</label>
-                    <input 
-                        type="text" 
-                        className="contactMe-input" 
-                        name="name" 
-                        value={formData.name}
-                        onChange={e => handleFormChange(e)}
-                        required
-                        placeholder="John Doe"
-                    />
-                </div>
-                <div className="contactMe-form-group">
-                    <label htmlFor="email" className="contactMe-label">Email</label>
-                    <input 
-                        type="email" 
-                        className="contactMe-input" 
-                        name="email" 
-                        value={formData.email} 
-                        onChange={e => handleFormChange(e)}
-                        required
-                        placeholder="JohnDoe@mail.com"
-                    />    
-                </div>
-                <div className="contactMe-form-group">
-                    <label htmlFor="message" className="contactMe-label">Message</label>
-                    <textarea 
-                        className="contactMe-input contactMe-message" 
-                        name="message" 
-                        rows="5" 
-                        value={formData.message}
-                        onChange={e => handleFormChange(e)}
-                        required
-                        placeholder="Your Message"
-                        >
-                    </textarea>    
-                </div>
-                <button type="submit" className="contactMe-submit">Submit</button>
-            </form>
+            <div className="contactMe-left-column">
+                <h1 className="contactMe-h1">Contact Me</h1>
+                <h2 className="contactMe-h2">Lets Get in Touch!</h2>
+            </div>
+            <div className="contactMe-right-column">
+                <form className="contactMe-form" onSubmit={handleSubmit}>
+                    <div className="contactMe-form-group">
+                        <label htmlFor="name" className="contactMe-label">Your Name</label>
+                        <input 
+                            type="text" 
+                            className="contactMe-input" 
+                            name="name" 
+                            value={formData.name}
+                            onChange={e => handleFormChange(e)}
+                            required
+                            placeholder="John Doe"
+                        />
+                    </div>
+                    <div className="contactMe-form-group">
+                        <label htmlFor="email" className="contactMe-label">Email</label>
+                        <input 
+                            type="email" 
+                            className="contactMe-input" 
+                            name="email" 
+                            value={formData.email} 
+                            onChange={e => handleFormChange(e)}
+                            required
+                            placeholder="JohnDoe@mail.com"
+                        />    
+                    </div>
+                    <div className="contactMe-form-group">
+                        <label htmlFor="message" className="contactMe-label">Message</label>
+                        <textarea 
+                            className="contactMe-input contactMe-message" 
+                            name="message" 
+                            rows="5" 
+                            value={formData.message}
+                            onChange={e => handleFormChange(e)}
+                            required
+                            placeholder="Your Message"
+                            >
+                        </textarea>    
+                    </div>
+                    <button type="submit" className="contactMe-submit">Submit</button>
+                </form>
+            </div>
+            
+            
             {loadingModalOpen && <div className="contactMe-loader-container"><Loader type="BallTriangle" color="black" height={100} width={100} /></div>}
             
             
