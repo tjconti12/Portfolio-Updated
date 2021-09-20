@@ -2,7 +2,7 @@
 <!-- ![Home Page](./src/Images/screenshots/homepage.png) -->
 Currently in progress. In development (updated as of 9/14)
 
-Live link here (placeholder)
+Live link here https://www.tylerjconti.com
 
 ## Motivation
 
