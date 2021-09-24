@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import backgroundImage from '../../resources/images/backgroundHorizontal.jpg';
 import logo from '../../resources/images/LogoWhite.png';
 
@@ -8,12 +10,18 @@ import Menu from '../Menu/Menu';
 
 const Banner = ({ menuOpen, toggleMenu }) => {
     
+    useEffect(() => {
+        window.addEventListener("scroll", toggleMenu);
+        return () => {
+            window.removeEventListener("scroll", toggleMenu);
+        }
+    }, [])
 
     return (
-        <div className="banner-container">
+        <div className="banner-container" onScroll={toggleMenu}>
             {!menuOpen && 
                 <div className="banner-logo-container">
-                    <img className="banner-logo" src={logo} alt="Tyler Conti Logo" />
+                    <img className="banner-logo" src={logo} alt="Tyler Conti Logo" onClick={toggleMenu} />
                 </div>
             }
             <div className="banner-background-container">

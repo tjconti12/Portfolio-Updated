@@ -5,12 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: fixed;
 }
 
 .banner-logo-container {
     width: 350px;
     z-index: 100;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .banner-logo {
