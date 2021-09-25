@@ -1,18 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useLocation } from "react-router-dom";
 
-
+import ReactGA from 'react-ga';
 
 import Header from "./Components/Header/Header";
 
 import Banner from "./Components/Banner/Banner";
 import ProjectsPage from "./Components/Pages/ProjectsPage/ProjectsPage";
 import ProjectDetail from './Components/ProjectDetail/ProjectDetail';
-import Menu from './Components/Menu/Menu';
 import Footer from './Components/Footer/Footer';
 import AboutMe from './Components/Pages/AboutMe/AboutMe';
 import ContactMe from './Components/Pages/ContactMe/ContactMe';
-import UpArrow from './Components/UpArrow/UpArrow';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,6 +36,10 @@ useEffect(() => {
     return () => document.body.style.overflow = 'unset';
   }
 }, [menuOpen])
+
+// Google Analytics
+ReactGA.initialize('UA-208590206-1');
+ReactGA.pageview(window.location.pathname);
 
   return (
     <div className="App">
