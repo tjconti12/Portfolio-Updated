@@ -1,3 +1,5 @@
+import ReactGA from 'react-ga';
+
 import { Link } from 'react-router-dom';
 
 import linkedin from '../../resources/images/linkedin.png';
@@ -7,19 +9,30 @@ import github from '../../resources/images/github.png';
 import './Footer.css';
 
 const Footer = () => {
+    // Google Analytics
+    const handleSocialClick = (name) => {
+        ReactGA.event({
+            category: "Links",
+            action: "Social",
+            label: `${name} Link Clicked`,
+            value: 1
+        })
+      }
+
+
     return (
         <div className="footer">
             <div className="footer-top">
                 <h4 className="footer-more-info">For more information, you can find my accounts below</h4>
                 <div className="footer-connection-logos-container">
                     <div className="footer-logo-container">
-                        <a className="footer-link" href="https://www.linkedin.com/in/tylerjconti/" target="_blank" rel="noopener noreferrer"><img className="connect-logo" src={linkedin} alt="linkedin logo" /></a>
+                        <a className="footer-link" href="https://www.linkedin.com/in/tylerjconti/" target="_blank" rel="noopener noreferrer" onClick={() => handleSocialClick("linkedIn")}><img className="connect-logo" src={linkedin} alt="linkedin logo" /></a>
                     </div>
                     <div className="footer-logo-container-medium">
-                        <a className="footer-link" href="https://tjconti12.medium.com/" target="_blank" rel="noopener noreferrer"><img className="connect-logo" src={medium} alt="medium logo" /></a>
+                        <a className="footer-link" href="https://tjconti12.medium.com/" target="_blank" rel="noopener noreferrer" onClick={() => handleSocialClick("medium")}><img className="connect-logo" src={medium} alt="medium logo" /></a>
                     </div>
                     <div className="footer-logo-container">
-                        <a className="footer-link" href="https://github.com/tjconti12/" target="_blank" rel="noopener noreferrer"><img className="connect-logo" src={github} alt="github logo" /></a>
+                        <a className="footer-link" href="https://github.com/tjconti12/" target="_blank" rel="noopener noreferrer" onClick={() => handleSocialClick("github")}><img className="connect-logo" src={github} alt="github logo" /></a>
                     </div>
                 </div>
             </div>

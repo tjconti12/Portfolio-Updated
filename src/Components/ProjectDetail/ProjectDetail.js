@@ -1,3 +1,5 @@
+import ReactGA from 'react-ga';
+
 import * as projectData from '../../resources/projects.json';
 
 import { useEffect } from 'react';
@@ -16,6 +18,25 @@ const ProjectDetail = ({ props }) => {
 
     // Searching the data for the correct project based on its title
     let currentProject = projectData.default.find(obj => obj.title === projectName);
+
+    // Google Analytics for each link click
+    const handleRepoClick = () => {
+        ReactGA.event({
+            category: "Links",
+            action: "Github",
+            label: `${currentProject.title} code viewed`,
+            value: 1
+        })
+      }
+
+    const handleLiveSiteClick = () => {
+        ReactGA.event({
+            category: "Links",
+            action: "Live App",
+            label: `${currentProject.title} live app viewed`,
+            value: 1
+        })
+    }
 
     return (
         <div className="project-detail-container">
@@ -39,8 +60,8 @@ const ProjectDetail = ({ props }) => {
                 
                 <div className="project-left-column">
                     <div className="project-button-container">
-                        <a className="project-button" href={currentProject.repo} target="_blank" rel="noopener noreferrer">View Code</a>
-                        <a className="project-button" href={currentProject.url} target="_blank" rel="noopener noreferrer">Live Application</a>
+                        <a className="project-button" href={currentProject.repo} target="_blank" rel="noopener noreferrer" onClick={handleRepoClick}>View Code</a>
+                        <a className="project-button" href={currentProject.url} target="_blank" rel="noopener noreferrer" onClick={handleLiveSiteClick}>Live Application</a>
                     </div>
                     <div className="project-highlight-images">
                        {currentProject.laptop && 

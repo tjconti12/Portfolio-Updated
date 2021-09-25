@@ -1,8 +1,12 @@
+import ReactGA from 'react-ga';
+
 import profilePic from '../../../resources/images/bwProfilePic.jpg';
 
 import './AboutMe.css';
 
-const AboutMe = () => {
+const AboutMe = ({ handleResumeClick }) => {
+    
+
     return (
         <div className="aboutme-container">
             <div className="aboutme-column-container">
@@ -43,7 +47,7 @@ const AboutMe = () => {
                         <li className="aboutme-list-item"><span className="aboutme-list-style">•</span>Photoshop</li>
                     </ul>
                 </div>
-                <a className="aboutme-resume-button" href="https://drive.google.com/file/d/1K3KIL9UTxakfBTXfYe8c5H73BTG26-Ot/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
+                <a className="aboutme-resume-button" href="https://drive.google.com/file/d/1K3KIL9UTxakfBTXfYe8c5H73BTG26-Ot/view?usp=sharing" target="_blank" rel="noopener noreferrer" onClick={handleResumeClick}>View Resume</a>
             </div>
                 
                 

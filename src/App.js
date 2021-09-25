@@ -38,32 +38,41 @@ useEffect(() => {
 }, [menuOpen])
 
 // Google Analytics
-ReactGA.initialize('UA-208590206-1');
+ReactGA.initialize(process.env.REACT_APP_ANALYTICS);
 ReactGA.pageview(window.location.pathname);
+
+const handleResumeClick = () => {
+  ReactGA.event({
+      category: "Links",
+      action: "Resume",
+      label: "Resume Link Clicked",
+      value: 1
+  })
+}
 
   return (
     <div className="App">
       <Switch>
         <Route path="/" exact>
-          <Banner menuOpen={menuOpen} toggleMenu={toggleMenu}/>
+          <Banner menuOpen={menuOpen} toggleMenu={toggleMenu} handleResumeClick={handleResumeClick}/>
         </Route>
         <Route path="/projects" exact>
-          <Header title="Projects" menuOpen={menuOpen} toggleMenu={toggleMenu} />
+          <Header title="Projects" menuOpen={menuOpen} toggleMenu={toggleMenu} handleResumeClick={handleResumeClick}/>
           <ProjectsPage />
           <Footer />
         </Route>
         <Route path="/projects/:project">
-          <Header title="Projects" menuOpen={menuOpen} toggleMenu={toggleMenu}/>
+          <Header title="Projects" menuOpen={menuOpen} toggleMenu={toggleMenu} handleResumeClick={handleResumeClick}/>
           <ProjectDetail />
           <Footer />
         </Route>
         <Route path="/AboutMe">
-          <Header title="About Me" menuOpen={menuOpen} toggleMenu={toggleMenu}/>
-          <AboutMe />
+          <Header title="About Me" menuOpen={menuOpen} toggleMenu={toggleMenu} handleResumeClick={handleResumeClick}/>
+          <AboutMe handleResumeClick={handleResumeClick}/>
           <Footer />
         </Route>
         <Route path="/ContactMe">
-          <Header title="Contact Me" menuOpen={menuOpen} toggleMenu={toggleMenu}/>
+          <Header title="Contact Me" menuOpen={menuOpen} toggleMenu={toggleMenu} handleResumeClick={handleResumeClick}/>
           <ContactMe />
           <Footer />
         </Route>

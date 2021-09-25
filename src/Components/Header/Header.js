@@ -10,7 +10,7 @@ import './Header.css';
 import Menu from '../Menu/Menu';
 import HamburgerMenu from 'react-hamburger-menu';
 
-const Header = ({ title, menuOpen, toggleMenu }) => {
+const Header = ({ title, menuOpen, toggleMenu, handleResumeClick }) => {
 
     const history = useHistory();
 
@@ -40,7 +40,7 @@ const Header = ({ title, menuOpen, toggleMenu }) => {
                     height={14}    
                 />
             </div>
-            { menuOpen && <Menu toggleMenu={toggleMenu} />}
+            { menuOpen && <Menu toggleMenu={toggleMenu} handleResumeClick={handleResumeClick} />}
         </div>
     )
 }
