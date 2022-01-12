@@ -28,6 +28,9 @@ const ContactMe = () => {
             if (response.data.status === 'success') {
                 setLoadingModalOpen(false);
                 setSuccessModalOpen(true);
+            } else {
+                setLoadingModalOpen(false);
+                setFailedModalOpen(true);
             }
         }).catch(error => {
             setLoadingModalOpen(false);
