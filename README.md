@@ -1,6 +1,5 @@
 # Updated Portfolio
 <!-- ![Home Page](./src/Images/screenshots/homepage.png) -->
-Currently in progress. In development (updated as of 9/14)
 
 Live link here https://www.tylerjconti.com
 
@@ -8,7 +7,7 @@ Live link here https://www.tylerjconti.com
 
 
 ## Build Status
-In build phase. Mobile first development
+Final build and deployment
 
 ## Tech/framework used
 1. React
