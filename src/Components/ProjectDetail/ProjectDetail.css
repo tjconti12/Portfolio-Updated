@@ -9,6 +9,10 @@
     color: #f2f2f2;
 }
 
+.project-right-column {
+    padding: 20px;
+}
+
 .project-title {
     font-family: bebas-neue-pro, sans-serif;
     font-weight: 400;
@@ -37,8 +41,8 @@
     font-family: bebas-neue-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
-    line-height: 20px;
-    font-size: 1.8rem;
+    line-height: 25px;
+    font-size: 2rem;
 }
 
 .project-button-container {
@@ -112,6 +116,15 @@
     Figured out how to center the oversized photo from stackoverflow. Included is the link
     https://stackoverflow.com/questions/14562457/center-oversized-image-in-div/41059954 
     */
+}
+
+.project-tag {
+    padding: 2px 5px;
+    margin: 5px 2px;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 800px) {

@@ -56,6 +56,15 @@ const ProjectDetail = ({ props }) => {
 
                     <h3 className="project-h3">Features</h3>
                     <p className="project-p">{currentProject.features}</p>
+                    {
+                        currentProject.tags &&
+                        <div>
+                        <h3 className="project-h3">Tags</h3>
+                        {currentProject.tags.map(tag => <button className="project-tag">{tag}</button>)}
+                        </div>
+                    }
+                    
+
                 </div>
                 
                 <div className="project-left-column">
