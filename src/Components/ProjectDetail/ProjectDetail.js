@@ -1,6 +1,6 @@
 import ReactGA from 'react-ga';
-
 import * as projectData from '../../resources/projects.json';
+import ReactPlayer from 'react-player';
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -61,7 +61,9 @@ const ProjectDetail = ({ props }) => {
                 <div className="project-left-column">
                     <div className="project-button-container">
                         <a className="project-button" href={currentProject.repo} target="_blank" rel="noopener noreferrer" onClick={handleRepoClick}>View Code</a>
-                        <a className="project-button" href={currentProject.url} target="_blank" rel="noopener noreferrer" onClick={handleLiveSiteClick}>Live Application</a>
+                        { currentProject.gameDownload ? 
+                        <a className="project-button" href={currentProject.gameDownload} target="_blank" rel="noopener noreferrer" onClick={handleLiveSiteClick}>Download Game</a>
+                        : <a className="project-button" href={currentProject.url} target="_blank" rel="noopener noreferrer" onClick={handleLiveSiteClick}>Live Application</a>}
                     </div>
                     <div className="project-highlight-images">
                        {currentProject.laptop && 
@@ -73,6 +75,13 @@ const ProjectDetail = ({ props }) => {
                             <div className="project-phone-image-container">
                                 <img className="project-phone-image" src={currentProject.phone} alt="Project Home Page on Mobile" />
                             </div>
+                        }
+                        {currentProject.video && 
+                            <div className="project-laptop-image-container" >
+                                <ReactPlayer 
+                                    url={currentProject.video}
+                                />
+                            </div> 
                         }
 
                     </div>

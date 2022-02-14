@@ -1,43 +1,45 @@
 [
     {
         "id": 1,
-        "title": "Güdeeds",
-        "description": "Community for Caregivers to Request and Offer Help",
-        "url": "https://www.gudeeds.xyz",
-        "repo": "https://github.com/tjconti12/favorsApp_FE",
-        "motivation": "This project was completed as part of a three day Hackathon event. Together with a team of UX designers and software developers, we were given the task of creating new technology for caregivers. Within a few hours, the idea for Güdeeds was created.",
-        "buildStatus": "Currently the application is designed for mobile. The application includes the use of a backend with a working database. Some stretch features such as user profiles is currently missing.",
-        "tech": "MERN stack application. React with Material UI and axios on the front end. Express, Node, and MongoDB on the backend/",
-        "features": "The application includes user authentication. A new user can register for an account and existing users can log in. Once logged in, the user is redirected to the home page. On the home page, the user can add a new request for help, or view exsisting requests to offer help. There is also a user profile page which is not fully functional at this time.",
-        "cover": "/ProjectImages/gudeeds/GudeedsCover.jpg",
-        "laptop": "/ProjectImages/gudeeds/gudeedsLaptop.png",
-        "phone": "/ProjectImages/gudeeds/gudeedsPhone.png",
+        "title": "InZombia",
+        "description": "Third Person melee combat game. The game is set in a medieval temple that has been infested with zombies. The lone character, Erika Archer (courtesy of Mixamo), must fend off these creatures. The game requires both skill and strategy in order to survive as many rounds as possible.",
+        "url": "",
+        "repo": "https://github.com/tjconti12/UE4_FirstProject",
+        "motivation": "I have always been interested in working with UE4. This game is a way for me to practice working with the engine, as well as develop my C++ language skills. Being a Software Engineer, there is a heavy focus on creating C++ classes and functionality. Most of the game logic is held in the Source/FirstProject directory. Before tackling this project, my knowledge of the C++ language was very minimal. While challenging at times, I am very proud of the work and determination that went into this project.",
+        "buildStatus": "Currently at an Alpha release. All game play mechanics and characters have been created. The game is currently fully functional without the presence of any known bugs.",
+        "tech": "This project is developed using Unreal Engine 4.27. All classes have been created using C++, with Blueprints derived from the C++ classes. Assets were obtained from both the Unreal Engine Marketplace, and Adobe's Mixamo.",
+        "features": "The game features a round count, which will increment after all the zombies for that round have been destroyed. There are 4 random spawn points located throughout the level. The first two are in the player start area, while the other two are behind a closed door. Once the player reaches 500 coins, they have to option of opening the door. Once that door is opened, all 4 spawn points are used. The 4 spawn points are chosen at random throughout the round. There are also multiple weapons for pickup. There is a starting sword, which can be equipped for free. As the player earns coins, they have the option of purchasing more powerful weapons. There is also a randomly spawned pickup between rounds, with a 1/4 chance of getting a health potion vs a coin",
+        "cover": "/ProjectImages/InZombia/InzombiaCover.png",
+        "video": "https://www.youtube.com/watch?v=e7-cIm1HjI8&ab_channel=TylerConti",
+        "videoCover": "/ProjectImages/InZombia/InzombiaTitle.png",
+        "gameDownload": "https://drive.google.com/drive/folders/15JQHCZXazUYcedqk71sjCHhHKgiShFVC?usp=sharing",
         "photos": [
-            {"url": "/ProjectImages/gudeeds/gudeeds2.png", "legend": "Home Screen After Login"},
-            {"url": "/ProjectImages/gudeeds/gudeeds3.png", "legend": "Add Event"},
-            {"url": "/ProjectImages/gudeeds/gudeeds4.png", "legend": "Event Detail"},
-            {"url": "/ProjectImages/gudeeds/gudeeds5.png", "legend": "My Schedule"},
-            {"url": "/ProjectImages/gudeeds/gudeeds6.png", "legend": "Profile Page"}
+            {"url": "/ProjectImages/InZombia/InzombiaChar.png", "legend": "Home Screen After Login"},
+            {"url": "/ProjectImages/InZombia/Gameplay1.png", "legend": "Home Screen After Login"},
+            {"url": "/ProjectImages/InZombia/Gameplay2.png", "legend": "Add Event"},
+            {"url": "/ProjectImages/InZombia/Gameplay3.png"},
+            {"url": "/ProjectImages/InZombia/Gameplay4.png", "legend": "My Schedule"}
         ]
     },
     {
         "id": 2,
-        "title": "Cat Crusader",
-        "description": "Fun nintendo style browser based game",
-        "url": "https://tjconti12.github.io/Cat-Crusader/",
-        "repo": "https://github.com/tjconti12/Cat-Crusader",
-        "motivation": "I was inspired to make a tile based game using vanilla javascript, html, and css. I wanted to create a fun and challenging game where the player has full control of the character. I wanted to test my modularity and organization by being able to reuse multiple sections of code.",
-        "buildStatus": "The game is currently playable up to level 4. It also includes a tutorial level that is optional. There are a few bugs present with the collision mechanics where the player will randomly fall through a platform when jumping on it. Currently, if the game throws an error, the entire application freezes.",
-        "tech": "Vanilla javascript, html, and sass for css. Used an application called tiled for making the maps.",
-        "features": "The game features a reusable tile map builder. You can get the map numbers from tiled when exporting as a js map file. Then just update the map array, the map column and row numbers, pixel size, and the tile atlas row numbers and column numbers. This allows the creation of multiple maps using multiple different tilesets. The game also includes AI enemy characters that move on their own.",
-        "cover": "/ProjectImages/catCrusader/CatCover.jpg",
-        "laptop": "/ProjectImages/catCrusader/catCrusaderLaptop.png",
+        "title": "Tailwind Aviation",
+        "description": "Rent a plane for an hour, two hours, or even the whole day! Tailwind aviation is a mock airplane rental company. Make an account, login, and travel to a new destination! ",
+        "url": "https://tailwind-aviation.netlify.app/",
+        "repo": "https://github.com/tjconti12/tailwind-aviation-front",
+        "motivation": "With my background in aviation, I have rented aircraft from multiple different places. I was inspired by a particular website, that lacked modern styling and features. There had to be a better way to set up scheduling.",
+        "buildStatus": "Currently, anyone can quickly see availability in real time. Once a user registers, they are able to reserve a spot if available. The website is only missing the ability to handle billing and payments, which will not be added since this is a mock up site.",
+        "tech": "React, Javascript, tailwind Css, Material-ui, Material-ui/pickers, moment js, react-calendar, react-calendar-timeline, react-responsive-carousel, craco, tailwindcss",
+        "features": "The site contains user authentication. New Users can register for an account, or returning users can log into their account. Once logged in, the add to calendar button becomes visible. The user can now go in and add to the schedule.",
+        "cover": "/ProjectImages/tailwind/TailwindCover.jpg",
+        "laptop": "/ProjectImages/tailwind/TailwindLaptop.png",
         "photos": [
-            {"url": "/ProjectImages/catCrusader/Cat1.png", "legend": "Main Menu"},
-            {"url": "/ProjectImages/catCrusader/Cat2.png", "legend": "Level 1 - Escaping From Home"},
-            {"url": "/ProjectImages/catCrusader/Cat3.png", "legend": "Level 2 - Leaving the Neighborhood"},
-            {"url": "/ProjectImages/catCrusader/Cat4.png", "legend": "Level 3 - Lost In The Woods"},
-            {"url": "/ProjectImages/catCrusader/Cat5.png", "legend": "Level 4 - Out To Sea"}
+            {"url": "/ProjectImages/tailwind/homepage.png", "legend": "Home Screen"},
+            {"url": "/ProjectImages/tailwind/calendar.png", "legend": "Calendar"},
+            {"url": "/ProjectImages/tailwind/scheduler.png", "legend": "Plane Scheduler"},
+            {"url": "/ProjectImages/tailwind/addEvent.png", "legend": "Reserve a Plane"},
+            {"url": "/ProjectImages/tailwind/location.png", "legend": "Location Page"},
+            {"url": "/ProjectImages/tailwind/planes.png", "legend": "Plane Page"}
         ]
     },
     {
@@ -83,23 +85,22 @@
     },
     {
         "id": 5,
-        "title": "Tailwind Aviation",
-        "description": "Rent a plane for an hour, two hours, or even the whole day! Tailwind aviation is a mock airplane rental company. Make an account, login, and travel to a new destination! ",
-        "url": "https://tailwind-aviation.netlify.app/",
-        "repo": "https://github.com/tjconti12/tailwind-aviation-front",
-        "motivation": "With my background in aviation, I have rented aircraft from multiple different places. I was inspired by a particular website, that lacked modern styling and features. There had to be a better way to set up scheduling.",
-        "buildStatus": "Currently, anyone can quickly see availability in real time. Once a user registers, they are able to reserve a spot if available. The website is only missing the ability to handle billing and payments, which will not be added since this is a mock up site.",
-        "tech": "React, Javascript, tailwind Css, Material-ui, Material-ui/pickers, moment js, react-calendar, react-calendar-timeline, react-responsive-carousel, craco, tailwindcss",
-        "features": "The site contains user authentication. New Users can register for an account, or returning users can log into their account. Once logged in, the add to calendar button becomes visible. The user can now go in and add to the schedule.",
-        "cover": "/ProjectImages/tailwind/TailwindCover.jpg",
-        "laptop": "/ProjectImages/tailwind/TailwindLaptop.png",
+        "title": "Cat Crusader",
+        "description": "Fun nintendo style browser based game",
+        "url": "https://tjconti12.github.io/Cat-Crusader/",
+        "repo": "https://github.com/tjconti12/Cat-Crusader",
+        "motivation": "I was inspired to make a tile based game using vanilla javascript, html, and css. I wanted to create a fun and challenging game where the player has full control of the character. I wanted to test my modularity and organization by being able to reuse multiple sections of code.",
+        "buildStatus": "The game is currently playable up to level 4. It also includes a tutorial level that is optional. There are a few bugs present with the collision mechanics where the player will randomly fall through a platform when jumping on it. Currently, if the game throws an error, the entire application freezes.",
+        "tech": "Vanilla javascript, html, and sass for css. Used an application called tiled for making the maps.",
+        "features": "The game features a reusable tile map builder. You can get the map numbers from tiled when exporting as a js map file. Then just update the map array, the map column and row numbers, pixel size, and the tile atlas row numbers and column numbers. This allows the creation of multiple maps using multiple different tilesets. The game also includes AI enemy characters that move on their own.",
+        "cover": "/ProjectImages/catCrusader/CatCover.jpg",
+        "laptop": "/ProjectImages/catCrusader/catCrusaderLaptop.png",
         "photos": [
-            {"url": "/ProjectImages/tailwind/homepage.png", "legend": "Home Screen"},
-            {"url": "/ProjectImages/tailwind/calendar.png", "legend": "Calendar"},
-            {"url": "/ProjectImages/tailwind/scheduler.png", "legend": "Plane Scheduler"},
-            {"url": "/ProjectImages/tailwind/addEvent.png", "legend": "Reserve a Plane"},
-            {"url": "/ProjectImages/tailwind/location.png", "legend": "Location Page"},
-            {"url": "/ProjectImages/tailwind/planes.png", "legend": "Plane Page"}
+            {"url": "/ProjectImages/catCrusader/Cat1.png", "legend": "Main Menu"},
+            {"url": "/ProjectImages/catCrusader/Cat2.png", "legend": "Level 1 - Escaping From Home"},
+            {"url": "/ProjectImages/catCrusader/Cat3.png", "legend": "Level 2 - Leaving the Neighborhood"},
+            {"url": "/ProjectImages/catCrusader/Cat4.png", "legend": "Level 3 - Lost In The Woods"},
+            {"url": "/ProjectImages/catCrusader/Cat5.png", "legend": "Level 4 - Out To Sea"}
         ]
     },
     {
@@ -139,6 +140,27 @@
         "phone": "/ProjectImages/oldPortfolio/portfolioPhone.png",
         "photos": [
             
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Güdeeds",
+        "description": "Community for Caregivers to Request and Offer Help",
+        "url": "https://www.gudeeds.xyz",
+        "repo": "https://github.com/tjconti12/favorsApp_FE",
+        "motivation": "This project was completed as part of a three day Hackathon event. Together with a team of UX designers and software developers, we were given the task of creating new technology for caregivers. Within a few hours, the idea for Güdeeds was created.",
+        "buildStatus": "Currently the application is designed for mobile. The application includes the use of a backend with a working database. Some stretch features such as user profiles is currently missing.",
+        "tech": "MERN stack application. React with Material UI and axios on the front end. Express, Node, and MongoDB on the backend/",
+        "features": "The application includes user authentication. A new user can register for an account and existing users can log in. Once logged in, the user is redirected to the home page. On the home page, the user can add a new request for help, or view exsisting requests to offer help. There is also a user profile page which is not fully functional at this time.",
+        "cover": "/ProjectImages/gudeeds/GudeedsCover.jpg",
+        "laptop": "/ProjectImages/gudeeds/gudeedsLaptop.png",
+        "phone": "/ProjectImages/gudeeds/gudeedsPhone.png",
+        "photos": [
+            {"url": "/ProjectImages/gudeeds/gudeeds2.png", "legend": "Home Screen After Login"},
+            {"url": "/ProjectImages/gudeeds/gudeeds3.png", "legend": "Add Event"},
+            {"url": "/ProjectImages/gudeeds/gudeeds4.png", "legend": "Event Detail"},
+            {"url": "/ProjectImages/gudeeds/gudeeds5.png", "legend": "My Schedule"},
+            {"url": "/ProjectImages/gudeeds/gudeeds6.png", "legend": "Profile Page"}
         ]
     }
 ]
